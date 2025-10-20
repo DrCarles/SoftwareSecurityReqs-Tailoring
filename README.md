@@ -68,3 +68,16 @@ The outcome of the asset identification phase is a comprehensive list of assets:
 | _Asset 1_     | _Personal identifiable information in the database_ |
 | _Asset 2_     | ...                                                 |
 | ...           |                                                     |
+
+## Asset Profiling
+
+Each Asset has its own characteristics and nature. Assets may be vulnerable to Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege
+
+The outcome of the Asset Profiling phase is a matrix mapping Assets against STRIDE categories.
+This matrix identifies whether Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service (DoS), or Elevation of Privilege affecting each asset could result in a cybersecurity risk
+
+| Asset Id | Is Spoofing a risk? | Is Tampering a risk? | Is Repudiation a risk? | Is Disclosure a risk? | Is DoS a risk? | Is Elevation a risk? |
+| -------- | ------------------- | -------------------- | ---------------------- | --------------------- | -------------- | -------------------- |
+| _Asset 1_     | _Yes/No_       |                      |                        |                       |                |                      |
+| _Asset 2_     | ...            |                      |                        |                       |                |                      |
+| ...           |                |                      |                        |                       |                |                      |
