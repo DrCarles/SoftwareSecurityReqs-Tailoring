@@ -42,7 +42,7 @@ Each requirement is traced to the following elements:
 
 ---
 
-Phase I: Threat Modeling
+# Phase I: Threat Modeling
 
 The cornerstone of this methodology is Threat Modeling, which identifies potential threats, quantifies associated risks, and defines appropriate mitigation measures.
 The Threat Modeling process consists of the following steps:
