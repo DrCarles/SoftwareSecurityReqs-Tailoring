@@ -103,3 +103,43 @@ The outcome of the Threat Agent Identification phase is a list of Threat Agents 
 | _Threat Agent 1_ | _Rogue System administrator with access to the database_ | Adversarial |
 | _Threat Agent 2_ | ...                                                      |             |
 | ...              |                                                          |             |
+
+---
+
+## Security Risk Description 
+
+Identify how Threat Agents can Spoof, Tamper, Repudiate, Disclose, Deny, or Elevate sensitive Assets. Use the Threat Agent List and the Asset Profiling Matrix as inputs
+
+The outcome of this Security Risk Description phase is a list of security risks in the following form:
+
+| Risk Id  | Threat Agent Id | Can do                            | On Asset Id | How                             |
+| -------- | --------------- | --------------------------------- | ----------- | ------------------------------- |
+| _Risk 1_ | Threat Agent 1  | Information Disclosure            | Asset 1     | By accessing the database files |
+| _Risk 2_ | ...             |                                   |             |                                 |
+| ...      |                 |                                   |             |                                 |
+
+In general, all risks must answer the questions: Which Threat Agents can harm the Assets? And how?
+
+---
+
+## Risk Rating 
+
+The final step is to rate each security risk to enable prioritization. Use the DREAD model and score each risk on the five aspects below, using integer values 1–3 (where 1 = lowest, 3 = highest)
+
+- Damage Potential — How severe would the impact be if the attack succeeded? 1 = Low, 2 = Medium, 3 = High
+- Reproducibility — How easy is the attack to reproduce reliably? 1 = Difficult, 2 = Medium, 3 = Easy
+- Exploitability — How easy is it to carry out the attack (time, skill, tools required)? 1 = Difficult, 2 = Medium, 3 = Easy
+- Affected Users — How many users would be impacted if the risk materializes? 1 = Few, 2 = Some, 3 = All
+- Discoverability — How easy is it for an attacker to discover the vulnerability or attack vector? 1 = Difficult, 2 = Medium, 3 = Easy
+
+It is important to note that this process is not inherently repeatable. Different evaluators may reach different conclusions, and even the same evaluator might produce different results on different days. For this reason, justification for each rating may be required to ensure transparency and traceability.
+
+The final score for each risk is the sum of the ratings for Damage Potential, Reproducibility, Exploitability, Affected Users, and Discoverability. Risks with higher total scores should be prioritized for mitigation
+
+The outcome of the risk rating process is a matrix linking each risk to its severity, providing a clear view of priorities:
+
+| Risk Id  | D     | R     | E     | A     | D     | Severity           |
+| -------- | ----- | ----- | ----- | ----- | ----- | ------------------ |
+| _Risk 1_ | _x1_  | _x2_  | _x3_  | _x4_  | _x5_  | = _x1+x2+x3+x4+x5_ |
+| _Risk 2_ | ...   |       |       |       |       |                    |
+| ...      |       |       |       |       |       |                    |
