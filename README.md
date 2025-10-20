@@ -69,6 +69,8 @@ The outcome of the asset identification phase is a comprehensive list of assets:
 | _Asset 2_     | ...                                                 |
 | ...           |                                                     |
 
+---
+
 ## Asset Profiling
 
 Each Asset has its own characteristics and nature. Assets may be vulnerable to Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege
@@ -81,3 +83,23 @@ This matrix identifies whether Spoofing, Tampering, Repudiation, Information Dis
 | _Asset 1_     | _Yes/No_       |                      |                        |                       |                |                      |
 | _Asset 2_     | ...            |                      |                        |                       |                |                      |
 | ...           |                |                      |                        |                       |                |                      |
+
+---
+
+## Threat Agent identification
+
+Each system has its own specific Threat Agents, depending on its nature and environment. For example, the threat agents affecting a physical medical device differ from those targeting a cloud-based web application
+
+Threat Agents can be classified as adversarial or accidental, based on their intent:
+
+1. **Adversarial** Threat Agents act with the intention to harm the system. Examples include malicious actors with network access, rogue administrators, disgruntled employees, or ransomware
+
+2. **Accidental** Threat Agents do not intend to cause harm but can still produce damage due to their access or influence. Examples include careless employees, environmental catastrophes, or software defects
+
+The outcome of the Threat Agent Identification phase is a list of Threat Agents relevant to the scope of the new application or feature
+
+| Threat Agent Id  | Description                                              | Intent      |
+| ---------------- | -------------------------------------------------------- | ----------- |
+| _Threat Agent 1_ | _Rogue System administrator with access to the database_ | Adversarial |
+| _Threat Agent 2_ | ...                                                      |             |
+| ...              |                                                          |             |
