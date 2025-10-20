@@ -143,3 +143,18 @@ The outcome of the risk rating process is a matrix linking each risk to its seve
 | _Risk 1_ | _x1_  | _x2_  | _x3_  | _x4_  | _x5_  | = _x1+x2+x3+x4+x5_ |
 | _Risk 2_ | ...   |       |       |       |       |                    |
 | ...      |       |       |       |       |       |                    |
+
+---
+
+# Phase II : Security Requirements 
+
+The Security Requirements goal is to identify how the security risks identified will be controlled. The security requirements definition is composed by the following
+steps:
+
+1. Constraints identification
+2. Security requirements description
+
+---
+
+## Constraint identification 
+
