@@ -1,4 +1,4 @@
-# Tailoring Software Security Requirements
+# Tailoring Software Security Requirements 🕵️‍♂️🛡️
 
 Security by Design is one of the fundamental pillars of product security. The following outlines a **Software Security Requirements Tailoring Methodology** divided in two phases:
 
@@ -14,7 +14,7 @@ This outcome of this methodology is a comprehensive list of **Cybersecurity Requ
 
 ---
 
-## Phase I: Threat Modeling
+## Phase I: Threat Modeling 🕵️‍♂️
 
 The cornerstone of this methodology is Threat Modeling, which identifies potential threats, quantifies associated risks, and defines appropriate mitigation measures.
 The Threat Modeling process consists of the following steps:
@@ -25,7 +25,7 @@ The Threat Modeling process consists of the following steps:
 4. Security Risks description
 5. Risk rating (optional)
 
-### Step 1/5: Asset Identification 
+### Step 1/5: Asset Identification 📋
 
 An Asset is any data, dataset, privilege, communication flow, or other element that is important from a security perspective and requires protection
 
@@ -39,7 +39,7 @@ The outcome of the asset identification phase is a comprehensive list of assets:
 | _Asset 2_     | ...                                                 |
 | ...           |                                                     |
 
-### Step 2/5: Asset Profiling
+### Step 2/5: Asset Profiling ⚙️
 
 Each Asset has its own characteristics and nature. Assets may be vulnerable to Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege
 
@@ -52,7 +52,7 @@ This matrix identifies whether Spoofing, Tampering, Repudiation, Information Dis
 | _Asset 2_     | ...            |                      |                        |                       |                |                      |
 | ...           |                |                      |                        |                       |                |                      |
 
-### Step 3/5: Threat Agent identification
+### Step 3/5: Threat Agent identification 🕵️‍♂️
 
 Each system has its own specific Threat Agents, depending on its nature and environment. For example, the threat agents affecting a physical medical device differ from those targeting a cloud-based web application
 
@@ -70,7 +70,7 @@ The outcome of the Threat Agent Identification phase is a list of Threat Agents 
 | _Threat Agent 2_ | ...                                                      |               |
 | ...              |                                                          |               |
 
-### Step 4/5: Security Risk Description 
+### Step 4/5: Security Risk Description 🚨
 
 Identify how Threat Agents can Spoof, Tamper, Repudiate, Disclose, Deny, or Elevate sensitive Assets. Use the Threat Agent List and the Asset Profiling Matrix as inputs
 
@@ -84,7 +84,7 @@ The outcome of this Security Risk Description phase is a list of security risks 
 
 In general, all risks must answer the questions: Which Threat Agents can harm the Assets? And how?
 
-### Step 5/5: Risk Rating 
+### Step 5/5: Risk Rating 🧮
 
 The final step is to rate each security risk to enable prioritization. Use the DREAD model and score each risk on the five aspects below, using integer values 1–3 (where 1 = lowest, 3 = highest)
 
@@ -108,7 +108,7 @@ The outcome of the risk rating process is a matrix linking each risk to its seve
 
 ---
 
-## Phase II : Security Requirements 
+## Phase II : Security Requirements 🛡️
 
 The Security Requirements goal is to identify how the security risks identified will be controlled. The security requirements definition is composed by the following
 steps:
@@ -116,8 +116,7 @@ steps:
 1. Constraints identification
 2. Security requirements description
 
-
-### Step 1/2: Constraint Identification 
+### Step 1/2: Constraint Identification 🚨 
 
 Secure Design is a continuous balance between security, usability, performance, and other system qualities. During the Secure Design Process, it is essential to clearly identify all constraints and their ownership
 
@@ -129,9 +128,7 @@ The outcome of this activity is a Constraint List in the following form:
 | _Constraint 2_   | ...                                                                  |             |
 | ...              |                                                                      |             |
 
-
-
-### Step 2/2: Security Requirements Description
+### Step 2/2: Security Requirements Description 🔐
 
 This step focuses on identifying how security risks will be mitigated or controlled. Each security risk must be addressed by one or more security requirements. When a security requirement is complex, it may be further refined into detailed specifications
 
