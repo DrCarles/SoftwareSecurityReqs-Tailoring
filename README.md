@@ -6,7 +6,7 @@ Security by Design is one of the fundamental pillars of product security. The fo
 
 2. **Security Requirement Definition:** The goal is to define the security countermeasures required to mitigate the identified risks, taking into account business and operational constraints. This phase describes how the application or feature will be protected by identifying actionable security requirements for each risk to guide design and implementation decisions
 
-This outcome of this methodology is a comprehensive list of **Cybersecurity Requirements**. Each requirement is traced to the following elements:
+The outcome of this methodology is a comprehensive list of **Cybersecurity Requirements**. Each requirement is traced to the following elements:
 
 - **Assets** – What needs to be protected?  
 - **Threat Agents** – Against whom?  
