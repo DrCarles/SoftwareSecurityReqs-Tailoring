@@ -98,11 +98,11 @@ Threat Agents can be classified as adversarial or accidental, based on their int
 
 The outcome of the Threat Agent Identification phase is a list of Threat Agents relevant to the scope of the new application or feature
 
-| Threat Agent Id  | Description                                              | Intent      |
-| ---------------- | -------------------------------------------------------- | ----------- |
-| _Threat Agent 1_ | _Rogue System administrator with access to the database_ | Adversarial |
-| _Threat Agent 2_ | ...                                                      |             |
-| ...              |                                                          |             |
+| Threat Agent Id  | Description                                              | Intent        |
+| ---------------- | -------------------------------------------------------- | ------------- |
+| _Threat Agent 1_ | _Rogue System administrator with access to the database_ | _Adversarial_ |
+| _Threat Agent 2_ | ...                                                      |               |
+| ...              |                                                          |               |
 
 ---
 
@@ -112,11 +112,11 @@ Identify how Threat Agents can Spoof, Tamper, Repudiate, Disclose, Deny, or Elev
 
 The outcome of this Security Risk Description phase is a list of security risks in the following form:
 
-| Risk Id  | Threat Agent Id | Can do                            | On Asset Id | How                             |
-| -------- | --------------- | --------------------------------- | ----------- | ------------------------------- |
-| _Risk 1_ | Threat Agent 1  | Information Disclosure            | Asset 1     | By accessing the database files |
-| _Risk 2_ | ...             |                                   |             |                                 |
-| ...      |                 |                                   |             |                                 |
+| Risk Id  | Threat Agent Id   | Can do                            | On Asset Id | How                               |
+| -------- | ----------------- | --------------------------------- | ----------- | --------------------------------- |
+| _Risk 1_ | _Threat Agent 1_  | _Information Disclosure_          | _Asset 1_   | _By accessing the database files_ |
+| _Risk 2_ | ...               |                                   |             |                                   |
+| ...      |                   |                                   |             |                                   |
 
 In general, all risks must answer the questions: Which Threat Agents can harm the Assets? And how?
 
@@ -156,5 +156,29 @@ steps:
 
 ---
 
-## Constraint identification 
+## Constraint Identification 
 
+Secure Design is a continuous balance between security, usability, performance, and other system qualities. During the Secure Design Process, it is essential to clearly identify all constraints and their ownership
+
+The outcome of this activity is a Constraint List in the following form:
+
+| Constraint Id    | Description                                                          | Ownership   |
+| ---------------- | ---------------------------------------------------------------------| ----------- |
+| _Constraint 1_   | _Full database encryption is not possible due to performance impact_ | _Dev team_  |
+| _Constraint 2_   | ...                                                                  |             |
+| ...              |                                                                      |             |
+
+---
+
+## Security Requirements Description
+
+This step focuses on identifying how security risks will be mitigated or controlled. Each security risk must be addressed by one or more security requirements. When a security requirement is complex, it may be further refined into detailed specifications
+
+The outcome of this step is a traceability matrix that links risks, security requirements, and constraints:
+
+
+| Requirement  Id  | Risk Id   | Description                                        | Constraints      |
+| ---------------- | --------- | -------------------------------------------------- | ---------------- |
+| _Requirement 1_  | _Risk 1_  | _Sensitive data in the database must be encrypted_ | _Constraint 1_   |
+| _Requirement 2_  | ...       |                                                    | _Not Applicable_ |
+| ...              |           |                                                    |                  |
